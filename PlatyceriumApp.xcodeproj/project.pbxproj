@@ -14,6 +14,11 @@
 		42014CAF29343DFF00546385 /* PlatyceriumApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42014CAD29343DFF00546385 /* PlatyceriumApp.xcdatamodeld */; };
 		42014CB129343E0200546385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42014CB029343E0200546385 /* Assets.xcassets */; };
 		42014CB429343E0200546385 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42014CB229343E0200546385 /* LaunchScreen.storyboard */; };
+		42014CBC29343F7000546385 /* FrontPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42014CBB29343F7000546385 /* FrontPageViewController.swift */; };
+		42014CC02934543900546385 /* PlatyceriumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42014CBF2934543900546385 /* PlatyceriumModel.swift */; };
+		42014CC32934850A00546385 /* FrontPageDataSoures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42014CC22934850A00546385 /* FrontPageDataSoures.swift */; };
+		42014CC5293486AD00546385 /* FrontPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42014CC4293486AD00546385 /* FrontPageCell.swift */; };
+		42014CC7293491B700546385 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42014CC6293491B700546385 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		42014CB029343E0200546385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42014CB329343E0200546385 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42014CB529343E0200546385 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42014CBB29343F7000546385 /* FrontPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageViewController.swift; sourceTree = "<group>"; };
+		42014CBF2934543900546385 /* PlatyceriumModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatyceriumModel.swift; sourceTree = "<group>"; };
+		42014CC22934850A00546385 /* FrontPageDataSoures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageDataSoures.swift; sourceTree = "<group>"; };
+		42014CC4293486AD00546385 /* FrontPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageCell.swift; sourceTree = "<group>"; };
+		42014CC6293491B700546385 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +52,9 @@
 		42014C9829343DFF00546385 = {
 			isa = PBXGroup;
 			children = (
+				42014CC129345BDA00546385 /* ViewModel */,
+				42014CBE29343F8600546385 /* View */,
+				42014CBD29343F7A00546385 /* Model */,
 				42014CA329343DFF00546385 /* PlatyceriumApp */,
 				42014CA229343DFF00546385 /* Products */,
 			);
@@ -62,12 +75,38 @@
 				42014CA629343DFF00546385 /* SceneDelegate.swift */,
 				42014CA829343DFF00546385 /* ViewController.swift */,
 				42014CAA29343DFF00546385 /* Main.storyboard */,
+				42014CBB29343F7000546385 /* FrontPageViewController.swift */,
+				42014CC6293491B700546385 /* DetailViewController.swift */,
 				42014CB029343E0200546385 /* Assets.xcassets */,
 				42014CB229343E0200546385 /* LaunchScreen.storyboard */,
 				42014CB529343E0200546385 /* Info.plist */,
 				42014CAD29343DFF00546385 /* PlatyceriumApp.xcdatamodeld */,
 			);
 			path = PlatyceriumApp;
+			sourceTree = "<group>";
+		};
+		42014CBD29343F7A00546385 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42014CBF2934543900546385 /* PlatyceriumModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42014CBE29343F8600546385 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42014CC4293486AD00546385 /* FrontPageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42014CC129345BDA00546385 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				42014CC22934850A00546385 /* FrontPageDataSoures.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +180,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42014CC7293491B700546385 /* DetailViewController.swift in Sources */,
 				42014CA929343DFF00546385 /* ViewController.swift in Sources */,
+				42014CC32934850A00546385 /* FrontPageDataSoures.swift in Sources */,
+				42014CC02934543900546385 /* PlatyceriumModel.swift in Sources */,
+				42014CBC29343F7000546385 /* FrontPageViewController.swift in Sources */,
+				42014CC5293486AD00546385 /* FrontPageCell.swift in Sources */,
 				42014CA529343DFF00546385 /* AppDelegate.swift in Sources */,
 				42014CA729343DFF00546385 /* SceneDelegate.swift in Sources */,
 				42014CAF29343DFF00546385 /* PlatyceriumApp.xcdatamodeld in Sources */,
