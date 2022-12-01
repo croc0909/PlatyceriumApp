@@ -14,13 +14,19 @@ class DetailViewController: UIViewController,UIScrollViewDelegate {
     @IBOutlet weak var photoScrollView: UIScrollView! // 圖片
     
     @IBOutlet weak var locationLabel: UILabel! // 產地
-    @IBOutlet weak var locationImageView: UIImageView! // 產地圖片
     @IBOutlet weak var platyceriumNameLabel: UILabel! // 名稱
     @IBOutlet weak var lightLabel: UILabel! // 陽光需求
     @IBOutlet weak var waterLabel: UILabel! // 水需求
     @IBOutlet weak var airLabel: UILabel! // 通風需求
     @IBOutlet weak var temperatureLabel: UILabel! // 溫度需求
     @IBOutlet weak var featureLabel: UILabel! // 特色
+    
+    @IBOutlet weak var image1: UIImageView!
+    @IBOutlet weak var image2: UIImageView!
+    @IBOutlet weak var image3: UIImageView!
+    @IBOutlet weak var image4: UIImageView!
+    @IBOutlet weak var image5: UIImageView!
+    
     
     //var tableCellHeight = 360 //統一 Cell 高度
     var selectValue = 0 //使用者選擇
@@ -87,8 +93,8 @@ class DetailViewController: UIViewController,UIScrollViewDelegate {
     }
 
     func setUI(){
-        locationImageView.layer.cornerRadius = 20
-        locationImageView.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumLocation)")
+        //locationImageView.layer.cornerRadius = 20
+        //locationImageView.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumLocation)")
     }
     /*
     // MARK: - Navigation
