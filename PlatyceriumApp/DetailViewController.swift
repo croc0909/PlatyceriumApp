@@ -56,29 +56,48 @@ class DetailViewController: UIViewController,UIScrollViewDelegate {
         
         //print("photoScrollView width \(photoScrollView.frame.size.width) height \(photoScrollView.frame.size.height)")
         
-        let imageWidth = photoScrollView.frame.size.width
         
-        let ScrollViewContentWidth = imageWidth * 5
+        //let ScrollViewContentWidth = imageWidth * 5
         
-        let ScrollViewContentHeight = photoScrollView.frame.size.height
+        //let ScrollViewContentHeight = photoScrollView.frame.size.height
         
-        photoScrollView.contentSize = CGSize(width: ScrollViewContentWidth, height: ScrollViewContentHeight) // 設定 ScrollView 內容寬、高
+        //photoScrollView.contentSize = CGSize(width: ScrollViewContentWidth, height: ScrollViewContentHeight) // 設定 ScrollView 內容寬、高
         
         for i in 0...5{
+            
+            switch i {
+            case 0:
+                print("000000 \(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+                image1.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            case 1:
+                image2.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            case 2:
+                image3.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            case 3:
+                image4.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            case 4:
+                image5.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            default:
+                image1.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+                image2.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+                image3.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+                image4.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+                image5.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)")
+            }
             // 圖片部分
-            let ImageViewWidth = photoScrollView.frame.size.width
-            let ImageViewX = (ImageViewWidth * CGFloat(i))
+            //let ImageViewWidth = photoScrollView.frame.size.width
+            //let ImageViewX = (ImageViewWidth * CGFloat(i))
 
-            let imageView = UIImageView(frame: CGRect(x:ImageViewX,y:CGFloat(0),width: photoScrollView.frame.size.width ,height:photoScrollView.frame.size.height )) // 定義imageView 長寬
+            //let imageView = UIImageView(frame: CGRect(x:ImageViewX,y:CGFloat(0),width: photoScrollView.frame.size.width ,height:photoScrollView.frame.size.height )) // 定義imageView 長寬
 
-            imageView.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)") //顯示圖片
-            imageView.contentMode = .scaleAspectFill // 圖片顯示模式
-            imageView.clipsToBounds = true
-            imageView.isUserInteractionEnabled = true
+            //imageView.image = UIImage(named: "\(PlatyceriumDatas[selectValue].PlatyceriumName)\(i)") //顯示圖片
+            //imageView.contentMode = .scaleAspectFill // 圖片顯示模式
+            //imageView.clipsToBounds = true
+            //imageView.isUserInteractionEnabled = true
             
             //print("imageView width \(imageView.frame.size.width) height \(imageView.frame.size.height)")
             
-            photoScrollView.addSubview(imageView) // 將圖片加入 ScrollView
+            //photoScrollView.addSubview(imageView) // 將圖片加入 ScrollView
         }
     }
     
